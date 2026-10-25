@@ -6,6 +6,9 @@ set -uo pipefail
 cd /home/mucida/3d-instagram || exit 1
 export TZ=America/Sao_Paulo
 export PATH=/home/mucida/.nvm/versions/node/v23.3.0/bin:/home/mucida/miniconda3/bin:/usr/local/bin:/usr/bin:/bin
+# Token de longa duração do `claude setup-token`, guardado fora do repo (chmod 600):
+#   CLAUDE_CODE_OAUTH_TOKEN=...
+[ -f "$HOME/.config/claude-rotina.env" ] && set -a && . "$HOME/.config/claude-rotina.env" && set +a
 HOJE=$(date +%F)
 [ -z "${FORCAR:-}" ] && [ "$(date +%H)" -lt 10 ] && exit 0
 [ -f "diario/$HOJE.md" ] && exit 0
@@ -24,4 +27,5 @@ claude -p "Hoje é $HOJE (America/Sao_Paulo). Leia ROTINA.md na raiz desta pasta
     "Bash(node:*)" "Bash(npm:*)" "Bash(npx:*)" "Bash(python3:*)" "Bash(ls:*)" "Bash(mkdir:*)" "Bash(cp:*)" "Bash(date:*)" \
     "Bash(git status:*)" "Bash(git add:*)" "Bash(git commit:*)" "Bash(git push:*)" "Bash(git log:*)" "Bash(git diff:*)" \
   >> "$LOG" 2>&1
-echo "== fim $(date '+%T') · saída $?" >> "$LOG"
+RC=$?
+echo "== fim $(date '+%T') · saída $RC" >> "$LOG"
