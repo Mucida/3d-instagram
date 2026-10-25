@@ -21,14 +21,16 @@ Leia isto antes de continuar. Calendário e legendas: `calendario.md`. Pesquisa:
 
 ## Feito
 - Carrosséis 01-custo-real (8), 02-markup-margem (6), 03-iniciante (8) em `pecas/carrosseis/`, revisados visualmente.
-- `calendario.md` com legendas, roteiros de câmera e plano de stories.
+- `calendario.md` com legendas, roteiros de câmera e plano de stories. Ritmo novo (24/10): 2–3 posts/semana, 4–6 stories/dia, tudo vale pro TikTok @3d.print.flow (`pesquisa/tiktok.md`).
+- 14 stories interativos 27/10–09/11 em `pecas/stories/27out-09nov/` (fonte `pecas/stories-27out-09nov.html`, CSS `_base/story.css`). Revisão: `render-slides.mjs ... --guia` + `python3 pecas/prancha.py <pasta> <saida.jpg>`.
+- Repo privado github.com/Mucida/3d-instagram. `ROTINA.md` = instruções da rotina diária das 10h (nuvem): tendências + stories do dia em `diario/` e `pecas/stories/AAAA-MM-DD/`.
 
 ## Falta
 1. **Reels HyperFrames** (projeto base pronto em `pecas/reels/base/`, com `assets/` = fontes, PNGs, `gsap.min.js` local). Copiar `base` para cada reel e escrever `index.html`:
    - **r1-so-filamento** (~15 s): gancho "Se você imprime pra vender / e cobra só o filamento…" (visível em t=0) → pilha de custos entrando linha a linha com total trocando 20,52 → 21,02 → 24,65 → 26,75 → 28,72 (troca por opacidade de spans; não usar contador com onUpdate) → celular com `projetos-4098` subindo → CTA "Calculadora grátis pra sempre · link na bio" + nota "loja de demonstração".
    - **r2-feira** (~15 s): "Voltou da feira com R$ 1.274 vendidos… / e lucrou quanto?" → descontos caindo um a um → "Lucro da feira R$ 279,02" verde → celular com `eventos-24-resultado` → CTA "Eventos · a partir do Starter · 7 dias grátis".
-   - **r3-pix** (~8 s): eyebrow "Novidade", "Agora dá pra assinar com Pix.", texto do changelog, mascote, marca.
+   - ~~r3-pix~~: virou story (`03-novidade-pix.png`).
    - Sem áudio (ele põe áudio em alta no app). Zona segura: texto entre y 168 e 1330, nada sob a coluna de botões à direita.
    - HyperFrames 0.8.193: raiz `#root[data-composition-id=main][data-duration][data-width=1080][data-height=1920]`; cada cena `.clip` com `data-start/-duration/-track-index`; animar filhos, não o `.clip`; `window.__timelines.main = tl` pausada; nada de Math.random/Date/repeat:-1. Comandos: `npx --yes hyperframes@0.8.193 check`, `render -o out.mp4 --quiet`, `snapshot --at N --no-end -o dir`. Ver `pesquisa/hyperframes-setup.md`.
-2. **Stories** 1080×1920 em `pecas/stories/` (PNG via render-slides com `.slide` de 1080×1920): enquete energia, quiz energia, caixinha "maior dor", link calculadora, novidade Pix, quiz markup. Deixar área marcada para o sticker.
+2. Criar a rotina na nuvem se ainda não existir (claude.ai/code/routines; a API daqui deu 401 "Connect your GitHub account").
 3. Revisar cada peça com prancha de miniaturas antes de entregar.
