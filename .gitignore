@@ -1,3 +1,6 @@
 node_modules/
 hf-teste/
 *.log
+diario/logs/
+.tmp/
+.tmp-rotina.lock
