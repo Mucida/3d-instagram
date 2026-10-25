@@ -1,5 +1,7 @@
 # Briefing — produção de conteúdo @app3dprintflow
 
+> **Organização (25/10):** caminhos abaixo são relativos a `_producao/`. Entrega pro Lucas SEMPRE em `../POSTAR/AAAA-MM-DD-dia/` (arquivos renomeados `feed-NN.png`, `story-N.png`, `reel.mp4` + `LEIA.md` com legenda, horário e sticker) — gerado por `montar_postar.py`; índice em `../CALENDARIO.md`; relatórios em `../RELATORIOS/`. Sem automação: ele pede "faz o de hoje" no chat e eu sigo `ROTINA.md`.
+
 Leia isto antes de continuar. Calendário e legendas: `calendario.md`. Pesquisa: `pesquisa/`.
 
 ## Fontes de verdade
