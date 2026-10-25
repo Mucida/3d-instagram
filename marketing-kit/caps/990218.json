@@ -1,0 +1,8 @@
+{
+ "content": [
+  {
+   "type": "text",
+   "text": "{\n  \"caminho\": \"\\\\\\\\wsl.localhost\\\\Ubuntu-20.04\\\\home\\\\mucida\\\\3d-instagram\\\\marketing-kit\\\\screens\\\\billing-mobile-dark-2x.png\",\n  \"width\": 860,\n  \"height\": 1864,\n  \"scale\": 2,\n  \"viewport\": {\n    \"width\": 430,\n    \"height\": 932\n  },\n  \"theme\": \"dark\",\n  \"idioma\": \"pt-BR\",\n  \"screen_id\": null,\n  \"route\": \"/billing\",\n  \"component\": null,\n  \"state\": {},\n  \"regions\": [],\n  \"omitidas\": [\n    {\n      \"id\": \"menu-lateral\",\n      \"label\": \"Menu lateral\",\n      \"motivo\": \"não aparece nesta tela, viewport ou estado\"\n    },\n    {\n      \"id\": \"menu-calculadora\",\n      \"label\": \"Item Calculadora do menu lateral\",\n      \"motivo\": \"não aparece nesta tela, viewport ou estado\"\n    }\n  ],\n  \"observacao\": \"regions em px da imagem (origem no canto superior esquerdo). `cortada:true` = a região continua além da borda. Rota sem entrada no catálogo: só as regiões globais foram medidas. Imagens do banco de teste (Loja Demo): nada de cliente real.\"\n}"
+  }
+ ]
+}

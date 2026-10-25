@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="_base/brand.css">
+<link rel="stylesheet" href="_base/carrossel.css">
+<style>
+  .n { font-family: var(--mono); font-weight: 600; font-size: 200px; line-height: .9; letter-spacing: -0.05em;
+       background: linear-gradient(180deg, var(--cyan), var(--blue)); -webkit-background-clip: text; color: transparent; margin-top: 40px; }
+  .n.q { background: linear-gradient(180deg, var(--amber), var(--orange)); -webkit-background-clip: text; }
+  .t { font-family: var(--display); font-weight: 700; letter-spacing: -0.03em; font-size: 96px; line-height: 1.04; margin-top: 30px; }
+  .lista { margin-top: 50px; display: flex; flex-direction: column; gap: 30px; }
+  .lista div { font-size: 42px; line-height: 1.3; font-weight: 500; color: var(--ink-soft); padding-left: 44px; position: relative; }
+  .lista div::before { content: ''; position: absolute; left: 0; top: 16px; width: 20px; height: 20px; border-radius: 6px; background: var(--orange); }
+  .lista b { color: var(--ink); }
+  .chk { display:flex; gap:26px; align-items:center; font-size:46px; font-weight:600; padding:28px 0; border-bottom:2px solid var(--line); }
+  .chk span { width:52px;height:52px;border-radius:14px;border:3px solid var(--cyan);flex:none; }
+</style></head>
+<body>
+
+<section class="slide bg" data-nome="01">
+  <span class="eyebrow" style="align-self:flex-start">Comprou a impressora?</span>
+  <div class="h1" style="font-size:118px;margin-top:70px">5 custos pra pôr no preço <span class="o">desde a 1ª venda</span></div>
+  <div class="sub" style="margin-top:50px">Quem cobra só o filamento trabalha de graça e nem percebe. <b>→</b></div>
+  <img src="_base/mascote.png" style="position:absolute;right:50px;bottom:110px;width:300px;opacity:.95">
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">1/8</span></div>
+</section>
+
+<section class="slide bg" data-nome="02" style="justify-content:center;padding-bottom:200px">
+  <div class="n">01</div>
+  <div class="t">Filamento, <span class="c">inclusive o que vai pro lixo</span></div>
+  <div class="lista">
+    <div>Pese a peça e some <b>suporte, purga e torre de limpeza</b>.</div>
+    <div>Use o preço que você <b>pagou</b> no carretel, com frete.</div>
+    <div>Troca de cor no AMS gasta material. <b>Entra na conta.</b></div>
+  </div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">2/8</span></div>
+</section>
+
+<section class="slide bg" data-nome="03" style="justify-content:center;padding-bottom:200px">
+  <div class="n">02</div>
+  <div class="t">Energia</div>
+  <div class="card" style="margin-top:40px;padding:36px 44px"><div class="num" style="font-size:34px;line-height:1.5;white-space:nowrap">potência (kW) × horas × tarifa (R$/kWh)</div></div>
+  <div class="lista">
+    <div>A tarifa está na sua conta de luz, <b>com impostos</b>.</div>
+    <div>Mesa aquecida e câmara fechada puxam mais. <b>Use a média, não o pico.</b></div>
+  </div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">3/8</span></div>
+</section>
+
+<section class="slide bg" data-nome="04" style="justify-content:center;padding-bottom:200px">
+  <div class="n">03</div>
+  <div class="t">Desgaste da impressora</div>
+  <div class="lista">
+    <div>Bico, mesa PEI, correias e ventoinha <b>têm vida útil</b>.</div>
+    <div>A máquina perde valor a cada hora: divida o preço dela pelas horas que espera usar.</div>
+    <div>É esse dinheiro que <b>compra a próxima impressora</b>.</div>
+  </div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">4/8</span></div>
+</section>
+
+<section class="slide bg" data-nome="05" style="justify-content:center;padding-bottom:200px">
+  <div class="n q">04</div>
+  <div class="t">Seu tempo</div>
+  <div class="lista">
+    <div>Fatiar, tirar da mesa, <b>lixar, pintar, montar, embalar</b>.</div>
+    <div>Defina quanto vale sua hora e cobre os minutos de cada peça.</div>
+    <div>Em peça com acabamento, <b>esse costuma ser o maior custo</b>.</div>
+  </div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">5/8</span></div>
+</section>
+
+<section class="slide bg" data-nome="06" style="justify-content:center;padding-bottom:200px">
+  <div class="n q">05</div>
+  <div class="t">As impressões que falham</div>
+  <div class="lista">
+    <div>Descolou da mesa, entupiu, faltou filamento no meio.</div>
+    <div>Reserve <b>uma porcentagem do custo</b> em toda peça pra cobrir as perdidas.</div>
+    <div>Modelo novo, que você nunca imprimiu? <b>Reserve mais.</b></div>
+  </div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">6/8</span></div>
+</section>
+
+<section class="slide bg" data-nome="07" style="justify-content:center;padding-bottom:200px">
+  <span class="eyebrow" style="align-self:flex-start">Checklist · salve</span>
+  <div class="h1" style="font-size:80px">Antes de passar o preço</div>
+  <div style="margin-top:40px">
+    <div class="chk"><span></span>Filamento + descarte</div>
+    <div class="chk"><span></span>Energia</div>
+    <div class="chk"><span></span>Desgaste da impressora</div>
+    <div class="chk"><span></span>Seu tempo</div>
+    <div class="chk"><span></span>Reserva pra falhas</div>
+    <div class="chk" style="border:0;color:var(--amber)"><span style="border-color:var(--amber)"></span>Bônus: taxa do marketplace e frete</div>
+  </div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">7/8</span></div>
+</section>
+
+<section class="slide bg" data-nome="08">
+  <span class="eyebrow" style="align-self:flex-start">Sem planilha</span>
+  <div class="h1" style="margin-top:60px">Calculadora de custos <span class="o">grátis pra sempre.</span></div>
+  <div class="sub" style="max-width:600px">Cadastre filamentos, impressoras, kW/h e o valor da sua hora uma vez. Depois é só preencher tempo e gramas.</div>
+  <img src="_base/mascote.png" style="position:absolute;right:30px;bottom:120px;width:360px">
+  <div style="margin-top:60px;display:flex;flex-direction:column;gap:22px;align-items:flex-start">
+    <span style="background:var(--orange);color:#fff;font-weight:800;font-size:40px;padding:24px 40px;border-radius:20px">Link na bio</span>
+    <span class="sub" style="font-size:30px;margin-top:6px;max-width:560px">Marque quem acabou de comprar a primeira impressora.</span>
+  </div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">8/8</span></div>
+</section>
+
+</body></html>

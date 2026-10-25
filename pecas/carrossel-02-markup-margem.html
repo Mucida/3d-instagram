@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link rel="stylesheet" href="_base/brand.css">
+<link rel="stylesheet" href="_base/carrossel.css">
+<style>
+  .eq { font-family: var(--mono); font-weight: 600; font-size: 40px; white-space: nowrap; line-height: 1.6; margin-top: 50px; }
+  .eq .op { color: var(--ink-soft); }
+  .tab { width: 100%; border-collapse: collapse; margin-top: 50px; font-size: 46px; }
+  .tab th { font-family: var(--mono); font-size: 26px; color: var(--ink-soft); text-align: left; letter-spacing: .1em; text-transform: uppercase; padding: 0 0 20px; }
+  .tab td { padding: 26px 0; border-top: 2px solid var(--line); font-family: var(--mono); font-weight: 600; }
+  .tab td:last-child, .tab th:last-child { text-align: right; }
+  .x { text-decoration: line-through; text-decoration-color: var(--loss); text-decoration-thickness: 6px; }
+</style></head>
+<body>
+
+<section class="slide bg" data-nome="01">
+  <span class="eyebrow" style="align-self:flex-start">Precificação 3D</span>
+  <div class="h1" style="font-size:112px;margin-top:70px">Você coloca <span class="o">50%</span> em cima do custo…</div>
+  <div class="h1" style="font-size:112px;margin-top:40px">e acha que lucra <span class="x">50%</span>?</div>
+  <div class="sub" style="margin-top:56px">Markup não é margem. E essa confusão come o lucro de muita loja 3D. <b>→</b></div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">1/6</span></div>
+</section>
+
+<section class="slide bg" data-nome="02" style="justify-content:center;padding-bottom:200px">
+  <span class="eyebrow" style="align-self:flex-start">O exemplo</span>
+  <div class="h1" style="font-size:84px">Peça com custo de <span class="c">R$&nbsp;30</span></div>
+  <div class="eq">
+    <div><span class="op">custo</span> R$ 30 <span class="op">+ 50% =</span> <span class="a">R$ 45</span></div>
+    <div><span class="op">lucro</span> R$ 15 <span class="op">÷ preço</span> R$ 45 <span class="op">=</span> <span class="o">33%</span></div>
+  </div>
+  <div class="sub" style="margin-top:60px">O markup é calculado sobre o custo. <b>A margem é o quanto do preço de venda fica com você.</b></div>
+  <div class="sub" style="font-size:34px">Você pôs 50%, mas só 33% do que o cliente paga é lucro.</div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">2/6</span></div>
+</section>
+
+<section class="slide bg" data-nome="03" style="justify-content:center;padding-bottom:200px">
+  <span class="eyebrow" style="align-self:flex-start">Agora piora</span>
+  <div class="h1" style="font-size:84px">Vendeu no marketplace, com <span class="o">20% de taxa</span></div>
+  <div class="eq">
+    <div><span class="op">preço</span> R$ 45 <span class="op">× 20% =</span> <span class="r">R$ 9</span> <span class="op">de taxa</span></div>
+    <div><span class="op">sobra</span> R$ 45 <span class="op">− 9 − 30 =</span> <span class="o">R$ 6</span></div>
+  </div>
+  <div class="sub" style="margin-top:60px">A taxa sai do <b>preço</b>, não do custo. Seus “50%” viraram <b class="r">13% de margem.</b></div>
+  <div class="nota" style="margin-top:30px">Taxa de 20% usada só como exemplo. Confira a do seu marketplace e da sua categoria.</div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">3/6</span></div>
+</section>
+
+<section class="slide bg" data-nome="04" style="justify-content:center;padding-bottom:200px">
+  <span class="eyebrow" style="align-self:flex-start">A conta certa</span>
+  <div class="h1" style="font-size:80px">Comece pela margem que você quer</div>
+  <div class="card" style="margin-top:50px;padding:44px 48px">
+    <div class="num" style="font-size:38px;line-height:1.5;white-space:nowrap">preço = custo ÷ (1 − margem − taxa)</div>
+  </div>
+  <div class="eq" style="font-size:42px">
+    <div><span class="op">R$ 30 ÷ (1 − 0,30 − 0,20) =</span> <span class="g">R$ 60</span></div>
+  </div>
+  <div class="sub" style="margin-top:40px">Taxa: R$ 12. Custo: R$ 30. <b>Sobram R$ 18, que são exatamente 30% de R$ 60.</b></div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">4/6</span></div>
+</section>
+
+<section class="slide bg" data-nome="05" style="justify-content:center;padding-bottom:200px">
+  <span class="eyebrow" style="align-self:flex-start">Cola rápida · salve</span>
+  <div class="h1" style="font-size:80px">Quanto de margem cada markup dá</div>
+  <table class="tab">
+    <tr><th>Markup sobre o custo</th><th>Margem real</th></tr>
+    <tr><td>+30%</td><td class="r">23%</td></tr>
+    <tr><td>+50%</td><td class="a">33%</td></tr>
+    <tr><td>+100% (dobrar)</td><td class="c">50%</td></tr>
+    <tr><td>+200% (triplicar)</td><td class="g">67%</td></tr>
+  </table>
+  <div class="nota" style="margin-top:30px">Antes de taxa de marketplace, frete e imposto.</div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">5/6</span></div>
+</section>
+
+<section class="slide bg" data-nome="06">
+  <span class="eyebrow" style="align-self:flex-start">No 3D Print Flow</span>
+  <div class="h1" style="margin-top:60px;font-size:92px">A taxa do marketplace sai <span class="o">antes do lucro.</span></div>
+  <div class="sub" style="max-width:600px">Cadastre a taxa de cada canal uma vez. Em cada venda, o lucro já aparece descontado.</div>
+  <img src="_base/mascote.png" style="position:absolute;right:30px;bottom:120px;width:360px">
+  <div style="margin-top:60px;display:flex;flex-direction:column;gap:22px;align-items:flex-start">
+    <span style="background:var(--orange);color:#fff;font-weight:800;font-size:40px;padding:24px 40px;border-radius:20px">Teste grátis por 7 dias</span>
+    <span class="sub" style="font-size:28px;margin-top:4px;max-width:560px">Sem cartão de crédito · Cancele quando quiser · Link na bio</span>
+    <span class="sub" style="font-size:30px;margin-top:6px;max-width:560px">Mande pro amigo que dobra o custo e acha que lucra 100%.</span>
+  </div>
+  <div class="rodape"><div class="marca"><img src="_base/logo-simples.png"><span>3D <span class="p">Print Flow</span></span></div><span class="pag">6/6</span></div>
+</section>
+
+</body></html>

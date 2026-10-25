@@ -1,0 +1,11 @@
+{
+  "name": "3d-instagram",
+  "private": true,
+  "type": "module",
+  "description": "Conteúdo @app3dprintflow (Instagram) e @3d.print.flow (TikTok)",
+  "scripts": {
+    "stories": "node pecas/render-slides.mjs",
+    "chromium": "playwright-core install chromium"
+  },
+  "dependencies": { "playwright-core": "1.62.0" }
+}

@@ -1,0 +1,68 @@
+/* Base visual 3D Print Flow — tokens do get_brand_kit (marketing-mcp) */
+@font-face { font-family: 'Archivo'; font-weight: 600; src: url('fontes/archivo/Archivo-SemiBold.ttf'); }
+@font-face { font-family: 'Archivo'; font-weight: 700; src: url('fontes/archivo/Archivo-Bold.ttf'); }
+@font-face { font-family: 'Inter'; font-weight: 400; src: url('fontes/inter/Inter-Regular.ttf'); }
+@font-face { font-family: 'Inter'; font-weight: 500; src: url('fontes/inter/Inter-Medium.ttf'); }
+@font-face { font-family: 'Inter'; font-weight: 600; src: url('fontes/inter/Inter-SemiBold.ttf'); }
+@font-face { font-family: 'Inter'; font-weight: 700; src: url('fontes/inter/Inter-Bold.ttf'); }
+@font-face { font-family: 'Inter'; font-weight: 800; src: url('fontes/inter/Inter-ExtraBold.ttf'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 400; src: url('fontes/jetbrains-mono/JetBrainsMono-Regular.ttf'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 600; src: url('fontes/jetbrains-mono/JetBrainsMono-SemiBold.ttf'); }
+
+:root {
+  --blue-deep: #0b3c8c; --blue: #1e88e5; --cyan: #4fc3f7;
+  --orange: #ff6b1a; --amber: #ffa726;
+  --graphite: #14161c; --night: #070d1f; --surface: #171922; --line: #272a36;
+  --ink: #eef2f8; --ink-soft: #93a0b4; --gain: #34d399; --loss: #f87171;
+  --display: 'Archivo', 'Inter', system-ui, sans-serif;
+  --text: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #000; font-family: var(--text); color: var(--ink); }
+
+/* Fundo da marca: noite azul com brilho frio em cima e quente embaixo */
+.bg {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(120% 60% at 15% 0%, rgba(30,136,229,.32), transparent 60%),
+    radial-gradient(90% 50% at 100% 100%, rgba(255,107,26,.22), transparent 60%),
+    linear-gradient(180deg, #0a1430 0%, var(--night) 55%, #0b0d14 100%);
+}
+.bg::before { /* grade técnica discreta, como a mesa da impressora */
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image: linear-gradient(rgba(79,195,247,.06) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(79,195,247,.06) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+}
+
+.eyebrow {
+  display: inline-block; font-family: var(--mono); font-weight: 600; font-size: 24px;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--cyan);
+  border: 2px solid rgba(79,195,247,.45); border-radius: 999px; padding: 10px 22px;
+}
+.h1 { font-family: var(--display); font-weight: 700; letter-spacing: -0.03em; line-height: 1.02; }
+.o { color: var(--orange); } .b { color: var(--blue); } .c { color: var(--cyan); }
+.a { color: var(--amber); } .g { color: var(--gain); } .r { color: var(--loss); } .s { color: var(--ink-soft); }
+.num { font-family: var(--mono); font-weight: 600; font-variant-numeric: tabular-nums; }
+.grad { background: linear-gradient(90deg, var(--blue), var(--orange)); }
+
+.card {
+  background: rgba(23,25,34,.82); border: 2px solid var(--line); border-radius: 28px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+}
+
+/* Assinatura: ícone + "3D Print Flow" */
+.marca { display: flex; align-items: center; gap: 16px; font-family: var(--display); font-weight: 700;
+  font-size: 38px; letter-spacing: -0.02em; }
+.marca img { width: 64px; height: 64px; }
+.marca .p { color: var(--orange); }
+
+/* Moldura de celular para as capturas do app */
+.phone { position: relative; border-radius: 64px; padding: 16px; background: #0d0f15;
+  border: 3px solid #2b3040; box-shadow: 0 40px 120px rgba(0,0,0,.6), 0 0 0 2px rgba(79,195,247,.15); }
+.phone .tela { border-radius: 50px; overflow: hidden; position: relative; background: #101219; }
+.phone .tela img { display: block; width: 100%; }
+
+.nota { font-size: 22px; color: var(--ink-soft); font-family: var(--text); }

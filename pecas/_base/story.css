@@ -1,0 +1,21 @@
+/* Stories 1080×1920. Livre: topo 0–220 (barra do perfil) e base 1580–1920 (caixa de resposta).
+   O sticker interativo (enquete, quiz, caixinha, link) entra no app, por cima da área .sticker. */
+.slide { width: 1080px; height: 1920px; padding: 220px 84px 460px; display: flex; flex-direction: column; justify-content: center; }
+.slide .eyebrow { align-self: flex-start; }
+.st-h { font-family: var(--display); font-weight: 700; letter-spacing: -0.03em; line-height: 1.02; font-size: 112px; margin-top: 44px; }
+.st-sub { font-size: 42px; line-height: 1.35; color: var(--ink-soft); font-weight: 500; margin-top: 36px; }
+.st-sub b { color: var(--ink); font-weight: 700; }
+/* Espaço reservado pro sticker: vazio na arte final */
+.sticker { height: 360px; margin-top: 70px; flex: none; }
+.st-dica { font-family: var(--mono); font-size: 28px; color: var(--ink-soft); letter-spacing: .06em; }
+.st-pe { position: absolute; left: 84px; right: 84px; top: 1460px; display: flex; justify-content: space-between; align-items: center; }
+.st-pe .marca { font-size: 34px; } .st-pe .marca img { width: 56px; height: 56px; }
+.st-pe .nota { text-align: right; max-width: 460px; }
+.st-big { font-family: var(--mono); font-weight: 600; letter-spacing: -0.05em; line-height: .95; font-size: 220px; margin-top: 50px; white-space: nowrap; }
+.st-mascote { position: absolute; right: 40px; width: 380px; }
+.st-btn { align-self: flex-start; background: var(--orange); color: #fff; font-weight: 800; font-size: 42px; padding: 26px 44px; border-radius: 22px; }
+/* Prancha de revisão: mostra onde ficam o sticker e as zonas ocupadas pelo app */
+body.guia .slide::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(rgba(255,0,0,.18), rgba(255,0,0,.18)) top/100% 220px no-repeat,
+              linear-gradient(rgba(255,0,0,.18), rgba(255,0,0,.18)) bottom/100% 340px no-repeat; }
+body.guia .sticker { outline: 4px dashed rgba(255,167,38,.8); outline-offset: -4px; }

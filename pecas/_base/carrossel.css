@@ -1,0 +1,20 @@
+.slide { width: 1080px; height: 1350px; padding: 90px 84px 0; display: flex; flex-direction: column; }
+  .rodape { position: absolute; left: 84px; right: 84px; bottom: 64px; display: flex; justify-content: space-between; align-items: center; }
+  .rodape .pag { font-family: var(--mono); font-size: 26px; color: var(--ink-soft); }
+  .h1 { font-size: 104px; margin-top: 44px; }
+  .sub { font-size: 40px; line-height: 1.35; color: var(--ink-soft); margin-top: 34px; font-weight: 500; }
+  .sub b { color: var(--ink); font-weight: 700; }
+  .valor { font-family: var(--mono); font-weight: 600; font-size: 180px; letter-spacing: -0.04em; line-height: 1; margin-top: 60px; }
+  .conta { font-family: var(--mono); font-size: 34px; color: var(--ink-soft); margin-top: 26px; }
+  .barra { height: 22px; border-radius: 11px; margin-top: 56px; display: flex; overflow: hidden; background: #1c2030; }
+  .barra i { display: block; height: 100%; }
+  .linha { display: flex; justify-content: space-between; align-items: baseline; padding: 26px 0; border-bottom: 2px solid var(--line); font-size: 38px; font-weight: 500; }
+  .linha .num { font-size: 40px; }
+  .linha.total { border-bottom: 0; font-weight: 800; font-size: 46px; }
+  .linha.total .num { font-size: 54px; }
+  .demo { position: absolute; left: 84px; bottom: 150px; font-size: 24px; color: var(--ink-soft); }
+  .tag { display:inline-block; font-family: var(--mono); font-size: 26px; padding: 8px 18px; border-radius: 12px; background: rgba(30,136,229,.16); color: var(--cyan); margin: 0 10px 12px 0; }
+  .soma { position:absolute; left:84px; right:84px; bottom:170px; }
+  .soma .rot { display:flex; justify-content:space-between; font-family:var(--mono); font-size:28px; color:var(--ink-soft); margin-bottom:18px; }
+  .soma .rot b { color: var(--ink); }
+  .soma .barra { margin-top:0; height:28px; border-radius:14px; }

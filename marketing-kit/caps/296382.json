@@ -1,0 +1,9 @@
+{
+ "content": [
+  {
+   "type": "text",
+   "text": "Erro: a Loja Demo não tem evento 'ao_vivo' (momento_feira ao_vivo|fim_do_dia) — rode o seed da Loja Demo"
+  }
+ ],
+ "isError": true
+}
